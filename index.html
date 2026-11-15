@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Punya ide? Jadikan proyek. — Undangan ke make.fun</title>
+<meta name="description" content="Pilih tantangan di make.fun, bangun bersama agent AI, dan ikut bersaing. Undangan komunitas dari @zefanyahermosa.">
+<style>
+  :root{
+    --krem:#f7f2e4;
+    --krem2:#efe7cf;
+    --arang:#26241d;
+    --arang2:#55503f;
+    --hijau:#1d4d33;
+    --hijau2:#2c6b47;
+    --kuning:#fdf3c2;
+    --garis:#d8cda9;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--krem);
+    color:var(--arang);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;
+  }
+  .lembar{max-width:1120px;margin:0 auto;padding:20px 28px 14px}
+  .pita{
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+    border-bottom:2px solid var(--arang);
+    padding-bottom:14px;
+  }
+  .pita .merek{font-weight:800;letter-spacing:.02em;font-size:20px}
+  .pita .merek em{color:var(--hijau);font-style:normal}
+  .pita .cap{
+    font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--arang2);text-align:right;
+  }
+  .panggung{
+    display:grid;grid-template-columns:1.5fr 1fr;gap:36px;
+    padding:26px 0 6px;
+  }
+  .label{
+    display:inline-block;font-size:12px;font-weight:700;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--hijau);
+    border:1.5px solid var(--hijau);border-radius:999px;padding:5px 12px;
+    margin:0 0 18px;
+  }
+  h1{
+    margin:0 0 14px;font-size:54px;line-height:1.02;letter-spacing:-.02em;
+    font-weight:900;color:var(--arang);
+  }
+  h1 span{display:block}
+  h1 .aksen{color:var(--hijau)}
+  .ringkas{font-size:18px;color:var(--arang2);max-width:34em;margin:0 0 20px}
+  .ringkas b{color:var(--arang)}
+  .tombol{
+    display:inline-block;background:var(--hijau);color:#fff;
+    font-weight:800;font-size:18px;text-decoration:none;
+    padding:15px 26px;border-radius:10px;
+  }
+  .tombol:hover{background:var(--hijau2)}
+  .mikro{font-size:14px;color:var(--arang2);margin:12px 0 0;max-width:32em}
+  .catatan{
+    background:var(--kuning);border:1.5px solid var(--garis);
+    border-radius:14px;padding:18px 20px 12px;
+  }
+  .catatan h2{margin:0 0 4px;font-size:17px}
+  .catatan .tanda{font-size:13px;color:var(--arang2);margin:0 0 14px}
+  .catatan ol{margin:0;padding-left:22px}
+  .catatan li{margin:0 0 10px;font-size:15px}
+  .catatan li b{display:block}
+  .alur{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+    border:2px solid var(--arang);border-radius:12px;overflow:hidden;
+    margin:18px 0 10px;background:#fff;
+  }
+  .tahap{padding:13px 18px;border-left:2px solid var(--arang)}
+  .tahap:first-child{border-left:none}
+  .tahap .no{
+    display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;
+    background:var(--hijau);color:#fff;border-radius:50%;
+    font-size:13px;font-weight:800;margin-bottom:8px;
+  }
+  .tahap h3{margin:0 0 4px;font-size:15px}
+  .tahap p{margin:0;font-size:13px;color:var(--arang2)}
+  .penjelas{font-size:14px;color:var(--arang2);margin:0 0 18px;max-width:62em}
+  .kaki{
+    border-top:2px solid var(--arang);padding-top:12px;
+    display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    font-size:14px;
+  }
+  .kaki .tautan{font-weight:800}
+  .kaki a{color:var(--hijau);text-decoration:underline}
+  .kaki code{
+    background:var(--krem2);border:1px solid var(--garis);
+    border-radius:6px;padding:1px 7px;font-size:13px;
+  }
+  .kaki .bukan{color:var(--arang2);max-width:34em}
+  @media (max-width:760px){
+    .lembar{padding:20px 18px 16px}
+    .panggung{grid-template-columns:1fr;gap:24px;padding-top:28px}
+    h1{font-size:44px}
+    .alur{grid-template-columns:1fr 1fr}
+    .tahap:nth-child(3){border-left:none}
+    .tahap{border-top:2px solid var(--arang)}
+    .tahap:nth-child(-n+2){border-top:none}
+    .kaki{flex-direction:column}
+  }
+</style>
+</head>
+<body>
+<main class="lembar">
+  <header class="pita">
+    <div class="merek">make<em>.</em>fun</div>
+    <div class="cap">Undangan komunitas &middot; bukan halaman resmi</div>
+  </header>
+
+  <section class="panggung">
+    <div>
+      <p class="label">Untuk para pembuat</p>
+      <h1>
+        <span>Punya ide?</span>
+        <span class="aksen">Jadikan proyek.</span>
+      </h1>
+      <p class="ringkas">
+        Pilih tantangan di <b>make.fun</b>, bangun bersama <b>agent AI</b>,
+        baca aturan bounty-nya, lalu siapkan karya untuk ikut bersaing.
+        Satu ide kecil bisa jadi aplikasi atau game yang dimainkan orang lain.
+      </p>
+      <a class="tombol" href="https://make.fun/r/t774y4rd">Lihat bounty di make.fun</a>
+      <p class="mikro">Mulai dari tantangan yang cocok dengan kemampuan dan waktumu — tidak perlu langsung yang paling besar.</p>
+      <p class="mikro">Kode referral: <b>t774y4rd</b> — pakai tautan di atas supaya undangan ini tercatat.</p>
+    </div>
+
+    <aside class="catatan">
+      <h2>Contoh ide proyek</h2>
+      <p class="tanda">Ini contoh saja, bukan tampilan atau aturan resmi make.fun.</p>
+      <ol>
+        <li><b>Satu mekanik yang seru</b>Game kecil dengan satu hal yang bikin orang mau mencoba lagi.</li>
+        <li><b>Prototipe bersama agent AI</b>Susun versi pertama, lalu perbaiki dari hasil main sendiri.</li>
+        <li><b>Uji ke orang lain</b>Pastikan orang yang belum pernah main bisa memainkannya tanpa penjelasan panjang.</li>
+        <li><b>Cocokkan dengan aturan bounty</b>Cek syarat, tenggat, dan cara penilaiannya sebelum mengirim karya.</li>
+      </ol>
+    </aside>
+  </section>
+
+  <section class="alur" aria-label="Alur ikut bounty">
+    <div class="tahap"><span class="no">1</span><h3>Pilih tantangan</h3><p>Cari bounty yang temanya kamu suka.</p></div>
+    <div class="tahap"><span class="no">2</span><h3>Bangun</h3><p>Buat karyamu bersama agent AI.</p></div>
+    <div class="tahap"><span class="no">3</span><h3>Uji</h3><p>Mainkan sampai terasa enak dimainkan.</p></div>
+    <div class="tahap"><span class="no">4</span><h3>Ikut sesuai aturan</h3><p>Kirim karya mengikuti aturan bounty itu.</p></div>
+  </section>
+  <p class="penjelas">Hadiah mengikuti aturan dan hasil penilaian tiap bounty — mendaftar tidak menjamin hadiah. Setiap bounty punya cara penilaian dan pembagian hadiahnya sendiri.</p>
+
+  <footer class="kaki">
+    <div>
+      <p style="margin:0 0 6px">Undangan dari <b>@zefanyahermosa</b></p>
+      <p style="margin:0">Daftar lewat tautan ini: <a class="tautan" href="https://make.fun/r/t774y4rd">make.fun/r/t774y4rd</a> &middot; kode referral <code>t774y4rd</code></p>
+      <p style="margin:6px 0 0;color:var(--arang2)">Ini tautan referral: kalau kamu mendaftar lewat tautan ini, akun @zefanyahermosa tercatat sebagai pengundangmu.</p>
+    </div>
+    <p class="bukan" style="margin:0">Halaman undangan komunitas — bukan halaman resmi make.fun.</p>
+  </footer>
+</main>
+</body>
+</html>
